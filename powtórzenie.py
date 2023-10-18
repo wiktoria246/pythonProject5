@@ -17,7 +17,7 @@ lista1 = ['x', 6, 'słoń', 12, 9.6]
 print(True)
 
 #f) komunikaty złożone
-imie = 'Janusz'
+imie = 'Janus'
 wiek = 45
 nazwisko = 'Kowal'
 
