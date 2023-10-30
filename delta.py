@@ -24,3 +24,4 @@ else:
         print('x = {}'.format(-b / (2 * a)))
     else:
         print('sprzeczne')
+5
