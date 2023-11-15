@@ -16,4 +16,4 @@ for i in range(10)
     x = x + 3'''
 
 #3 sposób
-for x, y, z in zip(list(range(3, 31, 3)) 
+for x, y, z in zip(list(range(3, 31, 3))
