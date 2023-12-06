@@ -76,3 +76,52 @@ print(lista14[2])#pobieramy 3 element(numerujemy od 0)
 #b)korzystajac z elementów ujemnych
 lista15[2, 4, 6, 8, 5, 3]
 print(lista15[-2])#pobieramy drugi element od konca(numerujemy od -1 do -długości)
+
+#14.Jak wyciąć fragment listy
+lista15 = [1, 3, 5, 7, 6, 7, 4, 7]
+print(lista15[2:5])#wycinamy emenemty nr 2 do nr 4 (1 -7) : <2, 5)
+print(lista15[1:6:2])#wycinamy element nr 1 do nr 5 (6 -1) co drugi element
+print(lista15[-1:-6:-2])
+print(lista15[::-1])#odwracanie listy na trwałe
+
+ #15.funkcje specjalne
+ #a) sum()- bylo
+ #b) max() - było
+ #c) min():
+
+ lista16 = [-1, 9, 5, 23, 80]
+ print(min(lista16))
+
+ #d)długość(ilość elementów)
+ print(len(lista16))
+
+ #e)sortowanie llisty - modyfikacja listhy na trwałe
+ lista17 = [-13, 2, 4, -5, 7]
+ lista17.sort()#domyślnie stosujemy rosnąco
+ print(lista17)
+
+ lista18 = [2, 4, -4, 7, 8, 1]
+ lista18.sort(reverse=True)#domysln9e sortujemy malejaco
+
+ #jak zobaczyć liste posortowana ale nie na trwałe
+ lista19 = [4, 7, ,-8, 1, 3, 6]
+print(list(sorted(lista19)))
+print(lista19)
+
+#f)odwracanie listy - wersja z funkcja reverse()
+lista20 = [2, 5, 8, 3, 9, 2]
+lista20.reversed()
+print(lista20)
+
+#g)zlicznie elementów na liście
+lista21 = [3, 5, 7, 4, 77, 8]
+print(lista21,count(2))
+
+#h)funkcja map - czyli odwzorowanie
+lista22 = [3, 5, 7, 3, 86, 67]
+lista22_jako_liczby = list(map(int, lista22))#każdy napis zmieniamy na liczbwe int
+print(lista22_jako_liczby)
+
+lista23 = [3, 6, 7]
+lista23_jako_str = list(map(str, lista23))
+print(lista23_jako_str)
