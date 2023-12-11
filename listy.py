@@ -87,10 +87,10 @@ print(lista15[::-1])#odwracanie listy na trwałe
  #15.funkcje specjalne
  #a) sum()- bylo
  #b) max() - było
- #c) min():
+ #c) min() - było
 
- lista16 = [-1, 9, 5, 23, 80]
- print(min(lista16))
+lista16 = [-1, 9, 5, 23, 80]
+print(min(lista16))
 
  #d)długość(ilość elementów)
  print(len(lista16))
@@ -119,9 +119,43 @@ print(lista21,count(2))
 
 #h)funkcja map - czyli odwzorowanie
 lista22 = [3, 5, 7, 3, 86, 67]
-lista22_jako_liczby = list(map(int, lista22))#każdy napis zmieniamy na liczbwe int
+lista22_jako_liczby = list(map(int, lista22))#każdy napis zmieniamy na liczbe int
 print(lista22_jako_liczby)
 
 lista23 = [3, 6, 7]
 lista23_jako_str = list(map(str, lista23))
 print(lista23_jako_str)
+
+#i)usuwanie elementów
+lista24 = [1, 5, 7, 24, 6]
+lista24.remove(6)#usuwanie elementu na bazie jego wartości(tutaj 6) - tylko pierwszy raz
+print(lista24)
+
+lista25 = [5, 7, 3, 6, 2, 4, 5, 6, 5]
+
+while 5 in lista25:#usuwanie wszystkich licz o podanej wartości(tutaj usuwamy 5)
+   lista25.remove(5)
+print(lista25)
+
+#j)usuwanie elementów na bazie ivh pozycji na liście 
+lista26 = ['jezyk polski', 'filozofia', 'wiedza o kulturze', 'etyka', 'hit']
+del lista26[2]#usunięcie elementu 3 
+print(lista26)
+
+lista27 = [1410, 1939, 2004, 2000, 1795, -1]
+
+del lista27[1:4]
+print(lista27)
+
+#WYRAŻENIA LISTOWE
+
+#wyłapywanie liczb parzystych z listy - metoda hałupnicz
+lista28 = [3, 8, 1, 9, 44, 16, 7, 50, 48]
+lista29 = []
+for e in lista28:
+ #liczba1 % liczb2 - obliczamy reszte z dzielenia liczby "liczba 1" przez "liste2"
+    if lista29.append(e) #badanie czy lista przy dieleniu przez 2 daje reszte 0 (parzysta)
+print(lista29)
+
+#wyłapywanie liczb parzystych z listy - metoda piekna
+lista30 = [e for e in lista30 if e % 2 == 0]
