@@ -32,7 +32,7 @@ print(hashtags)
 #Zadanie8
 scorers = [27, 8, 15, 2, 9, 10, 21, 4, 20, 5]
 scorers.sort()
-print(max(scorers)'''
+print(max(scorers)
 
 #Zadanie9
 players = ['LeBron', 'Kobe', 'Jordan']
@@ -45,5 +45,38 @@ scores.insert(2, 22)
 players = ['LeBron', 'Kobe', 'Jordan', 'Durant']
 scores = [27, 18, 22, 15]
 players.remove('Kobe')
-del scores[1]
+popped_store = scores.pop(1)
+print(players)
+print(scores)
+print(popped_score)
+
+#Zadanie11
+
+players = ['LeBron', 'Kobe', 'Jordan']
+scores = [27, 18, 15]
+
+new_players = ['LeBron', 'Kobe', 'Jordan']
+new_scores = [27, 18]
+
+players.extend(new_players)
+print(players)
+
+store.extend(new_store)
+print(store)'''
+
+#Zadanie12
+
+score_stack = []
+score_stack.append('0-0')
+print(store_stack[-1])
+score_stack.append('1-0')
+print(score_stack[-1])
+score_stack.append('1-1')
+print(score_stack[-1])
+score_stack.append('1-2')  
+print(score_stack[-1])
+score_stack.pop(-1)
+print(store_stack)
+
+#zadanie13
 
