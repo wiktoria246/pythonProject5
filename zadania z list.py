@@ -1,4 +1,4 @@
-#Zadanie 1
+'''#Zadanie 1
 cities = ['Warszawa', 'Łódź', 'Kraków']
 lista1 = ['Gdańsk']
 cities.extend(lista1)
@@ -31,4 +31,19 @@ print(hashtags)
 
 #Zadanie8
 scorers = [27, 8, 15, 2, 9, 10, 21, 4, 20, 5]
+scorers.sort()
+print(max(scorers)'''
+
+#Zadanie9
+players = ['LeBron', 'Kobe', 'Jordan']
+scores = [27, 18, 15]
+lista1 = ['Durant']
+players.extend(lista1)
+scores.insert(2, 22)
+
+#Zadanie10
+players = ['LeBron', 'Kobe', 'Jordan', 'Durant']
+scores = [27, 18, 22, 15]
+players.remove('Kobe')
+del scores[1]
 
